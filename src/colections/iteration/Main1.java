@@ -54,7 +54,13 @@ public class Main1 {
             System.out.println("Key : " + entry.getKey() + " value : " + entry.getValue());
         }
 
-        System.out.println("Using keySet()");
+        System.out.println("Using entrySet() with var");
+        for (var entry : customers.entrySet()) {
+            System.out.println("Key : " + entry.getKey() + " value : " + entry.getValue());
+        }
+
+        //not so effective you are doing extra get(key)
+        System.out.println("Using keySet() not so effective");
         for (Integer key : customers.keySet()) {
             System.out.println("Key : " + key + " value : " + customers.get(key));
         }
@@ -74,5 +80,10 @@ public class Main1 {
             System.out.println("Key : " + key + " value : " + customers.get(key));
         }
 
+        System.out.println("-- Map remove with removeIf --");
+        //customers.entrySet().removeIf(entry -> entry.getValue().equals("Smith") );
+        customers.values().removeIf(val -> val.equals("Smith") );
+
+        customers.forEach((id, name) -> System.out.println("Key : " + id + " value : " + name));
     }
 }
