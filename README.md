@@ -63,7 +63,8 @@ A **queue** is a linear data structure or a collection in Java that stores eleme
 A **deque** is a double-ended queue. It FIFO + **LIFO**, can use like a vector and stack.
 
 ![](images/dequeuec.gif)
-#Maps
+
+# Maps
 
 - HashMap: Doesn't maintain any order.
 - LinkedHashMap: Maintains insertion order.
