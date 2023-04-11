@@ -2,7 +2,7 @@
 
 ![](images/Lists.png?raw=true)
 
-lists are **ordered**,
+Lists are **ordered**, and preferable to use the **ArrayList**
 1. means they have indexes, they are ordered by the
 2. means they can be sorted by same condition too
 
