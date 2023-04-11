@@ -56,7 +56,7 @@ TreeSet - Can't be unSorted(if you add not numeric or String object you have to 
  new TreeSet(comparator)
 // or your set objects class make comparable(by implementing comparable interface and overwriting compareTo method comparing rule).
 ```
-#Que and Deque
+# Que and Deque
 
 A **queue** is a linear data structure or a collection in Java that stores elements in a **FIFO** (First In, First Out) order. similar vector.
 
