@@ -1,4 +1,4 @@
-package colections.iteration;
+package collections.iteration;
 
 public class Book {
 

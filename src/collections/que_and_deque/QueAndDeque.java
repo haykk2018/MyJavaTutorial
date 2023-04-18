@@ -1,4 +1,4 @@
-package colections.que_and_deque;
+package collections.que_and_deque;
 
 import java.util.*;
 

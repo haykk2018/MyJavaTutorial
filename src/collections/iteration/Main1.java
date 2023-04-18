@@ -1,4 +1,4 @@
-package colections.iteration;
+package collections.iteration;
 
 import java.util.*;
 
@@ -29,13 +29,15 @@ public class Main1 {
         System.out.println("-- remove variant with iterator --");
 
         Iterator<Book> iterItems = booksSet.iterator();
-        while (iterItems.hasNext()){
+        while (iterItems.hasNext()) {
             // next() method  by turn returns element of collection, if we call it again will return second element
-            if(Objects.equals(iterItems.next().author, "Byron"))
+            if (Objects.equals(iterItems.next().author, "Byron"))
                 iterItems.remove();
         }
         booksSet.forEach(System.out::println);
 
+
+        /* MAP */
         Map<Integer, String> customers = new HashMap<>();
         customers.put(1, "Jon");
         customers.put(2, "Smith");
@@ -44,8 +46,10 @@ public class Main1 {
         System.out.println("Using foreach in Java 8");
         customers.forEach((id, name) -> System.out.println("Key : " + id + " value : " + name));
 
+        customers.keySet().forEach(System.out::println);
+
         System.out.println("stream");
-        customers.entrySet().stream().forEach(e ->
+        customers.entrySet().forEach(e ->
                 System.out.println("Key : " + e.getKey() + " value : " + e.getValue())
         );
 
@@ -82,7 +86,7 @@ public class Main1 {
 
         System.out.println("-- Map remove with removeIf --");
         //customers.entrySet().removeIf(entry -> entry.getValue().equals("Smith") );
-        customers.values().removeIf(val -> val.equals("Smith") );
+        customers.values().removeIf(val -> val.equals("Smith"));
 
         customers.forEach((id, name) -> System.out.println("Key : " + id + " value : " + name));
     }

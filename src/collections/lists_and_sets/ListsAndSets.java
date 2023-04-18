@@ -1,4 +1,4 @@
-package colections.lists_and_sets;
+package collections.lists_and_sets;
 
 import java.util.*;
 import java.util.stream.Stream;

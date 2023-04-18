@@ -1,4 +1,4 @@
-package colections.lists_and_sets;
+package collections.lists_and_sets;
 
 public class Good {
 
