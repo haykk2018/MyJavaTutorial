@@ -4,6 +4,17 @@ public class Good {
 
     public String name;
     public Integer price;
+    public String category;
+
+    public Good(String name, Integer price, String category) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 
     public Good(String name, int price) {
         this.name = name;
